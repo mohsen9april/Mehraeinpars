@@ -140,14 +140,79 @@ display: none;}
   }
 }
 
+/* imageslider top */
+
+section {
+  padding: 2rem 9%;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+
+.btn:hover {
+  background: var(--green);
+  letter-spacing: 0.1rem;
+}
+
+.home .home-slider .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+
+.home .home-slider .slide .content {
+  flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img {
+  width: 100%;
+}
+
+.home .home-slider .slide .content span {
+  color: var(--green);
+  font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3 {
+  color: var(--black);
+  font-size: 7rem;
+  text-align: center;
+}
+
+.home .home-slider .slide .content p {
+  color: var(--light-color);
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+
   /* -------------- image slider -----------------------  */
+
+  .mainsection h1 {
+    padding: 15px;
+    font-size: 7rem;
+    text-align: center;
+  }
+
   .mainsection {
-    padding-top: 70px;
+    padding-top: 5px;
     justify-content: center;
     align-items: center;
     direction: rtl;
-
   }
+
   .options {
     display: flex;
     flex-direction: row;
@@ -322,14 +387,15 @@ display: none;}
   
  /* ---------- Course ---------- */
 .course {
-  width: 80%;
+  width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 .course h1 {
-font-size: 60px;}
+font-size: 6rem;
+}
   
 .row {
   margin-top: 5%;
@@ -339,7 +405,7 @@ font-size: 60px;}
 }
 
 .course-col{
-  flex-basis: 31%;
+  flex-basis: 32%;
   background: #fff3f3;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -349,7 +415,7 @@ font-size: 60px;}
 }
 
 .course-col:hover{
-  box-shadow: 0 0 20px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px 20px rgba(0,0,0,0.3);
 }
 
 .course-col h3 {
@@ -627,4 +693,34 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
+}
+
+
+/* اخبار شرکت */
+.news h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.news .wrapper {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+
+.news .wrapper .item {
+  display: inline-block;
+
+  width: 380px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  background: #ddd;
+  margin-right: 2px;
+}
+
+.wrapper .item:nth-child(even) {
+  background-color: burlywood;
 }
