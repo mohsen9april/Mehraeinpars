@@ -29,7 +29,7 @@ body {
 
 html{
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
 }
@@ -66,7 +66,7 @@ header .logo img{
 header .navbar a{
   font-size: 1.7rem;
   border-radius: .5rem;
-  padding:.5rem 1.5rem;
+  padding:.7rem 1.5rem;
   color:var(--black);
 }
 
@@ -698,29 +698,41 @@ img {vertical-align: middle;}
 
 /* اخبار شرکت */
 .news h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
 }
 
 .news .wrapper {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
 
 }
 
 .news .wrapper .item {
-  display: inline-block;
-
-  width: 380px;
-  height: 120px;
-  line-height: 120px;
+  min-width: 380px;
+  min-height: 320px;
   text-align: center;
-  background: #ddd;
-  margin-right: 2px;
+  /* background: #ddd; */
+  margin-right: 10px;
+  border-radius: 10%;
+  background: #eee;
 }
 
+.news .wrapper .item h1 {
+
+}
+
+.news .wrapper .item img {
+  height: 100px;
+  width: 100px;
+}
+
+.news .wrapper .item p {
+  
+}
+/* 
 .wrapper .item:nth-child(even) {
   background-color: burlywood;
-}
+} */
