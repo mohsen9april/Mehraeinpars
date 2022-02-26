@@ -707,7 +707,6 @@ img {vertical-align: middle;}
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-
 }
 
 .news .wrapper .item {
@@ -736,3 +735,33 @@ img {vertical-align: middle;}
 .wrapper .item:nth-child(even) {
   background-color: burlywood;
 } */
+
+
+.costumer {
+}
+
+.costumer h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.costumer .wrapper {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.costumer .wrapper .item {
+  min-width: 380px;
+  min-height: 320px;
+  margin-right: 10px;
+  border-radius: 10%;
+  background: #eee;
+  margin: auto;
+}
+
+.costumer .wrapper .item img {
+  height: 100px;
+  width: 100px;
+}
