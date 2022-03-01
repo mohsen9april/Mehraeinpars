@@ -424,7 +424,9 @@ font-size: 6rem;
 }
 
 .course-col p {
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  line-break: auto;
 }
 
 
@@ -736,20 +738,27 @@ img {vertical-align: middle;}
   background-color: burlywood;
 } */
 
+/* ------- Our Cusotmers -------- */
 
 .costumer {
+  margin: 100px auto;
 }
 
 .costumer h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
 }
 
 .costumer .wrapper {
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
+  /* overflow-x: auto;
+  overflow-y: hidden; */
+  white-space: nowrap; 
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+
 }
 
 .costumer .wrapper .item {
@@ -757,11 +766,18 @@ img {vertical-align: middle;}
   min-height: 320px;
   margin-right: 10px;
   border-radius: 10%;
-  background: #eee;
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
   margin: auto;
 }
 
+.costumer .wrapper .item:hover {
+  filter: grayscale(0%);
+}
+
 .costumer .wrapper .item img {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
 }
